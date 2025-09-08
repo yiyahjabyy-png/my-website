@@ -1,0 +1,100 @@
+/* Import font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0fdf4; /* hijau muda */
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    text-align: center;
+    font size: 1em;
+    color: #444;
+    line-height: 1.6;
+    margin bottom: 15px;
+  }  
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    margin-top: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 128, 0, 0.15);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2e7d32; /* hijau tua */
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+    color: #1b5e20; /* hijau gelap */
+    margin-top: 10px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #a5d6a7; /* hijau lembut */
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border-color: #43a047; /* hijau terang */
+    outline: none;
+    box-shadow: 0 0 5px rgba(67, 160, 71, 0.3);
+}
+
+button {
+    background-color: #43a047; /* hijau utama */
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c; /* hijau lebih gelap */
+}
+
+/* Kotak hasil perhitungan */
+#hasil {
+    background-color: #e8f5e9; /* hijau muda */
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #a5d6a7;
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#hasil p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #2e7d32;
+}
+
+#hasil h2 {
+    color: #1b5e20;
+}
+
+/* Animasi masuk */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
